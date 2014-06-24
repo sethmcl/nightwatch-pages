@@ -3,7 +3,7 @@
 Page object model for Nightwatch.js
 
 ```
-npm install nightwatch-pages
+npm install nightwatch-pages --save
 ```
 
 [![Build Status](https://travis-ci.org/sethmcl/nightwatch-pages.svg?branch=master)](https://travis-ci.org/sethmcl/nightwatch-pages)
