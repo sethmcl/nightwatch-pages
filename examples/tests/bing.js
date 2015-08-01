@@ -5,7 +5,7 @@ module.exports = {
     var searchTerm = 'selenium';
 
     client
-      .page.homepage.load()
+      .page.homepage.innerPage.load()
       .page.homepage.search(searchTerm)
       .page.searchResults.assertResults(searchTerm)
       .page.searchResults.navImages()
