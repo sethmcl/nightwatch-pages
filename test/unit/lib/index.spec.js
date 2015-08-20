@@ -22,12 +22,14 @@ describe('Pages module', function () {
     });
 
     it('should have loaded pages', function () {
-      s.assert.equal(Object.keys(client.page).length, 3);
+      s.assert.equal(Object.keys(client.page).length, 4);
       s.assert.equal(typeof client.page.Page1, 'object');
       s.assert.equal(typeof client.page.Page2, 'object');
       s.assert.equal(typeof client.page.innerPages, 'object');
       s.assert.equal(typeof client.page.innerPages.Page1, 'object');
       s.assert.equal(typeof client.page.innerPages.looseDirectory, 'undefined');
+      s.assert.equal(typeof client.page.innerPageNoBase, 'object');
+      s.assert.equal(typeof client.page.innerPageNoBase.Page1, 'object');
     });
   });
 
@@ -44,12 +46,14 @@ describe('Pages module', function () {
     });
 
     it('should have loaded pages', function () {
-      s.assert.equal(Object.keys(client.page).length, 3);
+      s.assert.equal(Object.keys(client.page).length, 4);
       s.assert.equal(typeof client.page.Page1, 'object');
       s.assert.equal(typeof client.page.Page2, 'object');
       s.assert.equal(typeof client.page.innerPages, 'object');
       s.assert.equal(typeof client.page.innerPages.Page1, 'object');
       s.assert.equal(typeof client.page.innerPages.looseDirectory, 'undefined');
+      s.assert.equal(typeof client.page.innerPageNoBase, 'object');
+      s.assert.equal(typeof client.page.innerPageNoBase.Page1, 'object');
     });
   });
 
